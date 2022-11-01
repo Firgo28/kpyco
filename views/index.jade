@@ -1,18 +1,52 @@
-extends layout
-
-block content
-  h1= title
-  h1 Welcome to #{title}
-  h1 Hello World, by PABW 7B2 Kopy.co
-  p Nama Kelompok : 
-    li PABW 7B2 Kopy.co
-  p Anggota Kelompok :
-    li   191080200025 Rina Safitri
-    li   191080200019 Angga Noviar Cipta Pahlevi
-    li   191080200178 Firdaus Margo Utomo
-  p  Framework Pilihan :
-    li Express.js (4)
-  p  Alamat Repo :
-    li https://github.com/kopyco/kopy.co.github.io
-  p Alamat Ngrok:
-    li <i> https://f4b3-140-0-96-32.ap.ngrok.io/
+doctype html 
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Bootstrap 4, from LayoutIt!
+        meta(name="description" content="Source code generated using layoutit.com")
+        meta(name="author" content="LayoutIt!")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/css/style.css')
+    body
+        div.container-fluid
+            div.row
+                div.col-md-12
+                    div.page-header
+                        h1 HELLO WORLD!
+                    div.jumbotron
+                        h2 PABW 7B2 Kopy.co
+                        table
+                            thead
+                            tr
+                                th #
+                                th Nama Kelompok
+                                th NIM
+                            tbody
+                            tr
+                                td 1
+                                td Angga Noviar Cipta Pahlevi
+                                td 191080200019
+                                td
+                            tr.table-active
+                                td 2
+                                td Rina Safitri
+                                td 191080200025
+                                td
+                            tr.table-danger
+                                td 3
+                                td Firdaus Margo Utomo
+                                td 191080200178
+                                td
+                        p Menggunakan framework Express.js
+                        p https://github.com/kopyco/kopy.co.github.io.git
+                        p 
+                        p
+                            a(href='https://9586-140-0-96-32.ap.ngrok.io') https://9586-140-0-96-32.ap.ngrok.io/
+                        p
+                            a.btn.btn-primary.btn-large(href='https://9586-140-0-96-32.ap.ngrok.io') To Our Website
+        script (type='text/javascript', src='/stylesheets/js/jquery.min.js')
+        script (type='text/javascript', src='/stylesheets/js/bootstrap.min.js')
+        script (type='text/javascript', src='/stylesheets/js/scripts.js')
