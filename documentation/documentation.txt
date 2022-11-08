@@ -1,0 +1,12 @@
+On MacOS or Linux, run the app with this command:
+$ DEBUG=myapp:* npm start
+
+On Windows Command Prompt, use this command:
+> set DEBUG=myapp:* & npm start
+
+On Windows PowerShell, use this command:
+PS> $env:DEBUG='myapp:*'; npm start
+
+
+For Load default Express JS
+Then load http://localhost:3000/ in your browser to access the app.
