@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* Coba bikin route*/
-router.get('/cars-csv', (req, res) => {
-    res.render('cars-csv')
+router.get('/contact', (req, res) => {
+    res.send('Hello World!')
   })
 
 module.exports = router;

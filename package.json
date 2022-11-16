@@ -7,11 +7,10 @@
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
-    "csv": "^6.2.2",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "jade": "^0.31.2",
+    "jade": "^1.9.2",
     "morgan": "~1.9.1"
   }
 }
