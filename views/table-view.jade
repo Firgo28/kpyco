@@ -1,0 +1,27 @@
+html 
+    head 
+        title Kopy.co Teams 
+        link(rel='stylesheet', href='./stylesheets/css/bootstrap.min.css')
+        link(rel='stylesheet', href='./stylesheets/css/style.css')
+        h1 Membaca data dari Database
+    body 
+        table.table.table-bordered
+            thead
+                    tr
+                        th Id
+                        th Brand
+                        th Type
+                        th Price
+                        th Option
+            tbody
+            each row, index in rows 
+                tr
+                td #{row.id}
+                td #{row.brand}
+                td #{row.model}
+                td #{row.price}
+                td
+                    a(href = "delete?id=#{row.id}") Delete | 
+                    a(href = "edit?id=#{row.id}") Edit
+        a(href = "./add-form") 
+                button(type="button") Add Data

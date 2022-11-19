@@ -13,8 +13,10 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "^0.31.2",
+    "md5": "^2.3.0",
     "morgan": "~1.9.1",
     "node-xml-stream": "^1.0.2",
+    "sqlite3": "^5.1.2",
     "xml2js": "^0.4.23"
   },
   "main": "app.js",

@@ -1,23 +1,21 @@
 // const loadJSON = require('../carsdata/Cars.json');
 // console.log(loadJSON);
 
-const { readFileSync } = require('fs');
+// const fs = require('fs');
+// // read file sample.json file
+// fs.readFile('../carsdata/Cars.json',
+//     // callback function that is called when reading file is done
+//     function(err, data) {       
+//         // json data
+//         var jsonData = data;
 
-// read file sample.json file
-readFileSync.readFile('../carsdata/Cars.json',
-    // callback function that is called when reading file is done
-    function(err, data) {       
-        // json data
-        var jsonData = data;
+//         // parse json
+//         var jsonParsed = JSON.parse(jsonData);
 
-        // parse json
-        var jsonParsed = JSON.parse(jsonData);
-
-         // access elements
-         console.log(jsonParsed.Id[0].Name + jsonParsed.persons[0].phone.office);
-         console.log(jsonParsed.Id[1].Name + jsonParsed.persons[0].city);
-
-    });
+//          // access elements
+//          console.log(jsonParsed[2].Id + '   ' + jsonParsed[2].Name);
+//         //  var datacars = jsonParsed;
+//     });
 
 
 
@@ -40,4 +38,9 @@ readFileSync.readFile('../carsdata/Cars.json',
 // });
 
 
+const { readFileSync } = require('fs');
 
+let loadJSON = () => JSON.parse(readFileSync(__dirname + '/../carsdata/Cars.json'));
+console.log(loadJSON());
+
+module.exports= { loadJSON }

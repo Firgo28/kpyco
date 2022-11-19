@@ -75,9 +75,9 @@ var  parser       = new xml2js.Parser();
                     throw error;
                 }else {
                     parser.parseString(text, function (err, result) {
-                        var rows = [result['root']['row']];
-                                        
-                        console.log(result['root']['row']  );
+                        var rows = result['root']['row'];
+                        var a = rows.filter((_, i) => i > 0);
+                        console.log(a);
                         return rows;
                     });
                 }

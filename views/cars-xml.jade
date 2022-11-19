@@ -6,7 +6,12 @@ html
         h1 Membaca file XML
     body 
         table.table.table-bordered
-        
+            thead
+                    tr
+                        th No
+                        th Merk
+                        th Seri
+            tbody
             each row, index in rows 
                 tr
                 td #{row['Id'][0]}
