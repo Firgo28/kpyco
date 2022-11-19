@@ -1,0 +1,19 @@
+html 
+    head
+        title Kopy.co Teams 
+        link(rel='stylesheet', href='./stylesheets/css/bootstrap.min.css')
+        link(rel='stylesheet', href='./stylesheets/css/style.css')
+        h1 Membaca file CSV
+    body
+        table.table.table-bordered
+            thead
+                tr
+                    th No
+                    th Merk
+                    th Seri
+            tbody
+            for item, index in items 
+                tr
+                    td #{item.nomor}
+                    td #{item.merk}
+                    td #{item.seri}

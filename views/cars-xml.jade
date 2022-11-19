@@ -1,0 +1,14 @@
+html 
+    head 
+        title Kopy.co Teams 
+        link(rel='stylesheet', href='./stylesheets/css/bootstrap.min.css')
+        link(rel='stylesheet', href='./stylesheets/css/style.css')
+        h1 Membaca file XML
+    body 
+        table.table.table-bordered
+        
+            each row, index in rows 
+                tr
+                td #{row['Id'][0]}
+                td #{row['Name'][0]}
+                td #{row['Price'][0]}
