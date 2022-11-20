@@ -152,7 +152,7 @@ router.get('/delete', function(req, res) {
     res.redirect("/view-form")
   });
 
-  router.get('/edit', function(req, res) {
+router.get('/edit', function(req, res) {
     var sql = "select * from carsdata WHERE id = ? LIMIT 1"
     var params = [req.query.id]
 
@@ -166,7 +166,7 @@ router.get('/delete', function(req, res) {
     
   });
 
-  router.post('/edit', function(req, res) {
+router.post('/edit', function(req, res) {
     var sql = "update carsdata set brand = ?, model = ?, price = ? where id = ?"
     var params = [req.body.dataBrand, req.body.dataType, req.body.dataPrice, req.query.id]
 
